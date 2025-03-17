@@ -31,7 +31,6 @@ body {
   align-items: flex-start;
   width: 340px;
   min-height: 428px;
-  height: auto;
   gap: 40px;
   padding: 24px 16px;
   background-color: #fff;
@@ -129,6 +128,21 @@ body {
   border-radius: 4px;
   color: #ffffff;
   box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.1), 0px 1px 2px rgb(0, 0, 0, 0.06);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.btn:hover{
+  transform: scale(0.9);
+}
+
+.btn:focus{
+  outline: 2px solid #0c0461; /* Add focus outline */
+  box-shadow: 0 0 5px rgba(67, 56, 202, 0.5);
+}
+
+.btn:active{
+  background-color: #635ac1;
 }
 
 .socials {
@@ -154,4 +168,15 @@ body {
   height: auto;
   border-radius: 4px;
   color: #4338ca;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.social-btn:hover{
+   transform: scale(1.1);
+   box-shadow: 0px 1px 2px 1px #4338ca;
+}
+
+.social-btn:active{
+  border-radius: 100%;
+  background-color: rgb(171, 171, 171);
 }
