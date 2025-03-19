@@ -16,11 +16,11 @@
     --error-color: rgb(241, 16, 16);
     --text-color: #0c0c0c;
     --text-primary: #897e7e;
-    --border-color: rgb(179, 178, 178);
+    --border-color: rgb(236, 230, 230);
     --bg-disabled: #fbfdff;
-    --text-disabled: #dadde0;
+    --text-disabled: #e4e6e8;
     --text-sm: 0.865rem;
-    --text-base: 1rem;
+    --text-base: 0.9rem;
   }
 
   body {
@@ -46,6 +46,9 @@
   .input-wrapper {
     display: grid;
     gap: 0.5rem;
+    font-size: var(--text-base);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
   }
 
   .input-wrapper[data-status="error"] {
@@ -97,7 +100,7 @@
     border: 2px solid var(--border, var(--border-color)) !important;
     border-radius: 8px;
     color: var(--_color, var(--text-primary));
-    background-color: var(--_bg-color, #f6f4f4);
+    background-color: var(--_bg-color, #f8f8f8);
 
     &:hover {
       --_bg-color: var(--hover-color);
@@ -110,13 +113,13 @@
     &:has(input:disabled) {
       --_bg-color: var(--bg-disabled);
       --_color: var(--text-disabled);
-      --border: var(--text-disabled);
+      --border: rgb(244, 238, 238);
     }
 
     input {
       flex: 1;
       outline: none;
-      background-color: var(--_bg-color, #f6f4f4);
+      background-color: var(--_bg-color, #f8f8f8);
 
       &::placeholder {
         color: var(--text-primary) !important;
